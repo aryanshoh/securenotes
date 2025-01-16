@@ -507,13 +507,12 @@
 
 .note-content {
     width: 100%;
-    height: calc(100vh - 350px); /* Уменьшаем высоту текстового поля */
-    padding: 0.8rem;
+    height: calc(100vh - 350px);
     font-size: 1rem;
     border: none;
     resize: none;
     line-height: 1.6;
-    margin-bottom: 2rem; /* Добавляем отступ снизу */
+    margin-bottom: 2rem;
 }
 .note-content:focus {
     outline: none;
