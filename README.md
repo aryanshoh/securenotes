@@ -65,26 +65,6 @@ cd client
 npm start
 ```
 
-## Структура проекта
-
-```
-securenotes/
-├── client/                 # Frontend
-│   ├── src/
-│   │   ├── components/    # React компоненты
-│   │   ├── context/      # React контекст
-│   │   ├── services/     # API сервисы
-│   │   └── styles/       # CSS стили
-│   └── public/
-│
-└── server/                # Backend
-    ├── src/
-    │   ├── config/       # Конфигурации
-    │   ├── models/       # Mongoose модели
-    │   ├── routes/       # API маршруты
-    │   └── middleware/   # Middleware
-    └── .env
-```
 
 ## API Endpoints
 
