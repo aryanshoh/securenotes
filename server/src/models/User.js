@@ -24,7 +24,6 @@ const userSchema = new mongoose.Schema({
     }
 });
 
-// Хеширование пароля перед сохранением
 userSchema.pre('save', async function(next) {
     if (!this.isModified('password')) {
         return next();
@@ -34,7 +33,6 @@ userSchema.pre('save', async function(next) {
     next();
 });
 
-// Метод для проверки пароля
 userSchema.methods.comparePassword = async function(candidatePassword) {
     return bcrypt.compare(candidatePassword, this.password);
 };
