@@ -49,9 +49,9 @@ npm install
 
 Создайте файл `.env` в папке server:
 ```env
-MONGODB_URI=your_mongodb_uri
+MONGODB_URI=mongodb+srv://admin:admin@cluster0.dbzzl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 PORT=3001
-JWT_SECRET=your_secret_key
+JWT_SECRET=super_secret_key_123
 ```
 
 4. **Запуск приложения:**
