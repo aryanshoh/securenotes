@@ -21,7 +21,7 @@
 ### Backend
 - Node.js
 - Express.js
-- MongoDB (база данных) (на облаке)
+- MongoDB (Atlas - БД на облаке)
 - JWT для аутентификации
 - bcrypt для хеширования паролей
 
