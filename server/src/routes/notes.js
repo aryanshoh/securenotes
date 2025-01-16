@@ -3,7 +3,6 @@ const Note = require('../models/Note');
 const auth = require('../middleware/auth');
 const router = express.Router();
 
-// Получить все заметки пользователя
 router.get('/', auth, async (req, res) => {
     try {
         const notes = await Note.find({ user: req.userId });
@@ -13,7 +12,6 @@ router.get('/', auth, async (req, res) => {
     }
 });
 
-// Создать новую заметку
 router.post('/', auth, async (req, res) => {
     try {
         const note = new Note({
@@ -27,7 +25,6 @@ router.post('/', auth, async (req, res) => {
     }
 });
 
-// Обновить заметку
 router.put('/:id', auth, async (req, res) => {
     try {
         const note = await Note.findOneAndUpdate(
@@ -44,7 +41,6 @@ router.put('/:id', auth, async (req, res) => {
     }
 });
 
-// Удалить заметку
 router.delete('/:id', auth, async (req, res) => {
     try {
         const note = await Note.findOneAndDelete({ 
